@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>KSWE: Freifach Informatik (FMS)</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            // Check for click events on the navbar burger icon
+            $(".navbar-burger").click(function () {
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+
+            });
+        });
+    </script>
+</head>
+<body>
+<section class="hero is-success is-bold">
+    <div class="hero-head">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                   data-target="einfNavBar">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="einfNavBar" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#topics">
+                        Themen
+                    </a>
+                    <a class="navbar-item" href="#requirements">
+                        Informationen
+                    </a>
+                    <a class="navbar-item" href="#contact">
+                        Kontakt
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                Freifach Informatik (FMS)
+            </h1>
+            <h2 class="subtitle">
+                Schuljahr 2022/2023, Kantonsschule Wettingen
+            </h2>
+        </div>
+    </div>
+</section>
+<section id="topics" class="section">
+    <h2 class="title is-2 is-size-3-mobile">Themen</h2>
+    <h4 class="subtitle is-4 is-size-5-mobile">
+        Einen Teaser für jedes Thema finden Sie unterhalb der Beschreibungen.
+    </h4>
+    <div class="tile is-ancestor is-vertical">
+        <div class="tile">
+            <div class="tile is-parent">
+                <article class="tile is-child">
+                    <div class="card bm--card-equal-height">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="python.jpg" alt="Python Code">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-3 is-size-4-mobile">Programmieren</p>
+                            <p class="subtitle is-5 is-size-6-mobile">mit Python.</p>
+                            <div class="content">
+                                Was ist ein Programm und wie sieht eine Programmiersprache aus? Wir lernen die
+                                Programmiersprache Python kennen und schreiben damit eigene Programme. Ausserdem
+                                lernen wir die wichtigsten Programmierkonzepte wie Schleifen, Variablen und
+                                Verzweigungen kennen.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                    <span>
+                                        Python ist (erneut) die Programmiersprache des Jahres. Im
+                                        <a href="https://www.tiobe.com/tiobe-index/">Ranking</a>
+                                        von Programmiersprachen nach ihrer Popularität befindet sich Python auf Platz 3
+                                        (Stand Januar 2021).
+                                    </span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child">
+                    <div class="card bm--card-equal-height">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="skytale.png" alt="Skytale">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-3 is-size-4-mobile">Kryptologie</p>
+                            <p class="subtitle is-5 is-size-6-mobile">Lehre der Geheimschriften.</p>
+                            <div class="content">
+                                Wie können wir unsere Nachrichten vor unbefugten Lesern geheim halten? Bereits
+                                Julius Caesar hat sich ein Verschlüsselungsverfahren überlegt, um seine
+                                Kriegsstrategien an seine Truppen zu übermitteln, ohne dass sie von seinen Feinden
+                                entziffert werden konnten. Wir probieren verschiedene Verschlüsselungsverfahren aus
+                                und untersuchen sie auf ihre Sicherheit.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                    <span>
+                                        Die ENIGMA ist ein bekanntes Kryptosystem. Unter
+                                        <a href="https://youtu.be/G2_Q9FoD-oQ">158,962,555,217,826,360,000 (Enigma Machine)</a>,
+                                        finden Sie ein Video, in dem die Funktionsweise erklärt wird.
+                                    </span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child">
+                    <div class="card bm--card-equal-height">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="kodierungen.jpg" alt="Kodierungen">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-3 is-size-4-mobile">Kodierungen</p>
+                            <p class="subtitle is-5 is-size-6-mobile">U+1F36B steht für &#x1F36B.</p>
+                            <div class="content">
+                                Wie stellt ein Computer Zahlen, Buchstaben und Bilder nur mit 0 und 1 dar? Wie ist
+                                ein Strichcode oder ein QR-Code aufgebaut? Was passiert, wenn wir eine Textnachricht
+                                an eine andere Person über das Internet senden? Wie wird sichergestellt, dass bei
+                                der anderen Person die Nachricht auch wieder lesbar ist?
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    Eine Liste von allen Emojis und deren Kodierungen gibt es auf
+                                    <a href="https://unicode.org/emoji/charts-13.0/full-emoji-list.html#food_&_drink">unicode.org</a>.
+                                </span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <br>
+        <div class="tile">
+            <div class="tile is-parent">
+                <article class="tile is-child">
+                    <div class="card bm--card-equal-height">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="algorithmen.png" alt="Graph">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-3 is-size-4-mobile">Algorithmen</p>
+                            <p class="subtitle is-5 is-size-6-mobile">aus dem Alltag kapieren.</p>
+                            <div class="content">
+                                <span class="has-text-weight-semibold">Suchen und Sortieren</span><br>
+                                Ein Computer speichert Millionen von Daten. Wie schafft er es dabei, nicht den Überblick
+                                zu verlieren und die richtigen Daten schnell wieder zu finden? Wir schauen uns
+                                verschiedene Möglichkeiten an, Datenmengen sortiert abzulegen und bestimmte Daten
+                                effizient wieder zu suchen.<br><br>
+                                <span class="has-text-weight-semibold">Routenplanung</span><br>
+                                Wie schafft es Google Maps, Apple Maps und Co. uns in einem Wegnetz den kürzesten Weg
+                                anzuzeigen? Zwischen zwei Standorten gibt es Tausende verschiedene Wege, aber trotzdem
+                                finden diese Routenplaner den kürzesten Weg. Welche Informationen benötigt die
+                                SBB-App, um zwischen Wettingen und Zürich die schnellste Zugverbindung zu finden?
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    Auch Barack Obama hat Grundkenntnisse in der Algorithmik. Schauen Sie sich
+                                    <a href="https://www.youtube.com/watch?v=k4RRi_ntQc8">dieses Video</a>
+                                    mit Google CEO Eric Schmidt an.
+                                </span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child">
+                    <div class="card bm--card-equal-height">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="network.jpg" alt="Netzwerk">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-3 is-size-4-mobile">Netzwerke</p>
+                            <p class="subtitle is-5 is-size-6-mobile">Das Internet.</p>
+                            <div class="content">
+                                <span class="has-text-weight-semibold">Theorie</span><br>
+                                Was passiert konkret, wenn wir Inhalte von einem Newsportal abrufen? Was ist ein Server
+                                und was ein Client? Wir schauen uns den groben Aufbau von bekannten Netzwerken an und
+                                was bei der Kommunikation über diese Netzwerke genau geschieht.<br><br>
+                                <span class="has-text-weight-semibold">Praxis</span><br>
+                                Sie erstellen eine eigene Website. Wir verwenden dafür verschiedene Technologien (z.B.
+                                HTML und CSS) und bauen Schritt-für-Schritt eine moderne Internetpräsenz. Wir gehen
+                                dabei auch auf Themen wie Cookies und Datenbanken ein.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                    <span>
+                                        Diese Website verwendet z.B. <a href="https://bulma.io">Bulma</a>:
+                                        <q>Bulma is a free, open source CSS framework based on Flexbox
+                                            and used by more than 200,000 developers.</q>
+                                    </span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child">
+                    <div class="card bm--card-equal-height">
+                        <div class="card-image">
+                            <figure class="image">
+                                <img src="ai.jpg" alt="Künstliche Intelligenz">
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <p class="title is-3 is-size-4-mobile">Künstliche Intelligenz</p>
+                            <p class="subtitle is-5 is-size-6-mobile">2001: A Space Odyssey</p>
+                            <div class="content">
+                                In den Medien hören wir immer öfters, dass die Künstliche Intelligenz bald einen grossen
+                                Einfluss auf uns Menschen haben könnte. Was ist damit gemeint und wie viel Wahrheit
+                                steckt in diesen Aussagen? Wir schauen uns an, was Künstliche Intelligenz konkret
+                                bedeutet und in welchen Bereichen Sie erfolgreich eingesetzt werden kann. Wir
+                                diskutieren über die Vor- und Nachteile für die Gesellschaft und die neuen
+                                Fragestellungen, welche sich durch den Einsatz von Künstlicher Intelligenz eröffnen.
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <p class="card-footer-item">
+                                <span>
+                                    Ein Klassiker: Mensch vs. Computer im Schach. <a
+                                        href="https://www.youtube.com/watch?v=KF6sLCeBj0s">Deep Blue</a>
+                                    schlägt den Schachweltmeister Garri Kasparow (1996).
+                                </span>
+                            </p>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="requirements" class="section">
+    <h2 class="title is-2 is-size-3-mobile">Informationen</h2>
+    <h4 class="subtitle is-4 is-size-5-mobile">
+        Rund um das Freifach Informatik
+    </h4>
+    <div class="tile is-ancestor">
+        <div class="tile is-parent">
+            <article class="tile is-child">
+                <article class="message is-warning is-light" style="height: 100%">
+                    <div class="message-header">
+                        <p>Notebook</p>
+                        <span class="icon">
+                            <i class="fas fa-laptop"></i>
+                        </span>
+                    </div>
+                    <div class="message-body">
+                        Es gibt keine Voraussetzungen für das Freifach. Das Grundlagenfach Informatik aus dem ersten
+                        Jahr bereitet Sie optimal auf das Freifach vor:
+                        <div class="content">
+                            <ul class="list">
+                                <li>Programme installieren (inkl. Download)</li>
+                                <li>Dateien hochladen/herunterladen (Upload/Download)</li>
+                                <li>Ordner erstellen, Dateien umbenennen und verschieben</li>
+                                <li>Routine im Umgang mit Office 365</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child">
+                <article class="message is-light is-info" style="height: 100%">
+                    <div class="message-header">
+                        <p>Unterricht</p>
+                        <span class="icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </span>
+                    </div>
+                    <div class="message-body content">
+                        Rahmenbedingungen:
+                        <ul>
+                            <li>2. und 3. Jahr FMS</li>
+                            <li>2 Lektionen pro Woche</li>
+                            <li>Zulassung für die Fachmaturität Kommunikation (mit einem Fachmittelschulausweis aus
+                                einem anderen Berufsfeld) bedingt den Besuch des Freifachs für zwei Jahre.
+                            </li>
+                        </ul>
+                    </div>
+                    <br>
+                    <br>
+                </article>
+            </article>
+        </div>
+        <div class="tile is-parent">
+            <article class="tile is-child">
+                <article class="message is-danger" style="height: 100%">
+                    <div class="message-header">
+                        <p>Informatik in anderen Berufsfeldern einsetzen</p>
+                        <span class="icon">
+                            <i class="fas fa-rocket"></i>
+                        </span>
+                    </div>
+                    <div class="message-body">
+                        <span class="has-text-weight-semibold">Erziehung: Informatikdidaktik</span><br>
+                        Können bereits Primarschülerinnen und Primarschüler an die Informatik herangeführt werden? Was
+                        gibt es für Hilfsmittel, um ihnen den Zugang zu erleichtern? Ist es auf der Primarstufe nützlich
+                        beim Programmieren auf Roboter zu setzen? Wir schauen uns konkrete Hilfsmittel an und
+                        diskutieren, wie und wann sie auf der Primarstufe am besten eingesetzt werden können.<br><br>
+                        <span class="has-text-weight-semibold">Gestaltung: Text-Layout</span><br>
+                        Welche Möglichkeiten gibt es, um eine Abschlussarbeit oder ein Plakat ansprechend zu gestalten?
+                        Mit welchen Tools kann man eine Website sowohl auf dem Desktop, als auch auf dem Mobilgerät
+                        bequem betrachten? Wir stellen Tools vor und diskutieren Vor- und Nachteile.
+                    </div>
+                </article>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="contact" class="section">
+    <h2 class="title is-2 is-size-3-mobile">Kontakt</h2>
+    <h5 class="subtitle is-5 is-size-6-mobile has-text-weight-normal">
+        Für weitere Fragen steht Ihnen Nicole Roth (ron at kswe dot ch) und Oliver Probst (pro at kswe dot ch)
+        gerne zur Verfügung. Sie können auch direkt dieses Kontaktformular verwenden.
+    </h5>
+    <form action="mail_handler.php" method="post">
+        <div class="field">
+            <label for="name" class="label">Name</label>
+            <div class="control has-icons-left has-icons-right">
+                <input id="name" name="name" class="input" type="text" placeholder="Vorname und Nachname" required>
+                <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+            </span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="email" class="label">E-Mail</label>
+            <div class="control has-icons-left has-icons-right">
+                <input id="email" name="email" class="input" type="email" placeholder="E-Mailadresse" required>
+                <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+            </span>
+            </div>
+        </div>
+        <div class="field">
+            <label for="message" class="label">Nachricht</label>
+            <div class="control">
+                <textarea id="message" name="message" class="textarea" placeholder="Ihre Nachricht"></textarea>
+            </div>
+        </div>
+        <div class="field is-grouped">
+            <div class="control">
+                <button name="submit" type="submit" class="button is-link">Senden</button>
+            </div>
+        </div>
+    </form>
+</section>
+<footer class="footer">
+    <div class="content has-text-centered">
+        <a class="media-left" href="https://www.kswe.ch">
+            <figure>
+                <img src="kswe_Logo_RZ_RGB.png" alt="KSWE Logo" style="height: 75px">
+            </figure>
+        </a>
+        <h6 class="title is-6">
+            Fachschaft Informatik
+        </h6>
+    </div>
+</footer>
+</body>
+</html>
